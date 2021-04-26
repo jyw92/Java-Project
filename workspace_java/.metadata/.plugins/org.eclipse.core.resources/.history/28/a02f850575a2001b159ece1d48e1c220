@@ -1,0 +1,10 @@
+package bean;
+
+public class MemberBean {
+	
+	private String id;
+	private String id;
+	private String id;
+	private String id;
+	private String id;
+}

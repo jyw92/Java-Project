@@ -1,0 +1,91 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div style="padding:20px 0">
+		<h2 style="text-align: center;"> 회원가입 </h2>
+		<form action="RequestJoinProc.jsp" method="post">
+			<table style="width:600px;margin:0 auto;" border="1">
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="text" name="id" style="width:80%;">
+						</td>
+					</tr>
+					<tr>
+						<th>패스워드</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="password" name="pw1" style="width:80%;">
+						</td>
+					</tr>
+					<tr>
+						<th>패스워드 확인</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="password" name="pw2" style="width:80%;">
+						</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="email" name="email" style="width:80%;">
+						</td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="tel" name="tel" style="width:80%;">
+						</td>
+					</tr>
+					<tr>
+						<th>관심분야</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="checkbox" name="hobby" value="캠핑">캠핑 &nbsp;&nbsp;
+							<input type="checkbox" name="hobby" value="캠핑">등산 &nbsp;&nbsp;
+							<input type="checkbox" name="hobby" value="캠핑">게임 &nbsp;&nbsp;
+							<input type="checkbox" name="hobby" value="캠핑">영화 &nbsp;&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<th>직업</th>
+						<td style="text-align:center;padding:7px 0">
+							<select name="job">
+								<option value="교사">교사</option>
+								<option value="변호사">변호사</option>
+								<option value="개발자">개발자</option>
+								<option value="의사">의사</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>나이</th>
+						<td style="text-align:center;padding:7px 0">
+							<input type="radio" name="age" value="10">10대 &nbsp;&nbsp;
+							<input type="radio" name="age" value="20">20대 &nbsp;&nbsp;
+							<input type="radio" name="age" value="30">30대 &nbsp;&nbsp;
+							<input type="radio" name="age" value="40">40대 &nbsp;&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<th>하고싶은말</th>
+						<td style="text-align:center;padding:0">
+							<textarea rows="20" name="info" style="resize:none;width:100%;border:none;box-sizing:border-box;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center;padding:5px 0">
+							<input type="submit" value="회원가입">
+							<input type="reset" value="취소">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>	
+</body>
+</html>

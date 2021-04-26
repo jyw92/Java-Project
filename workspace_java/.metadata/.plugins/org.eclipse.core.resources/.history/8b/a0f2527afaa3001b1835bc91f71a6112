@@ -1,0 +1,43 @@
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<% 
+	
+		request.setCharacterEncoding("UTF-8");
+		
+		String [] hobby = request.getParameterValues("hobby");
+		String textHobby = "";
+		for(int i=0; i<hobby.length; i++){
+			textHobby += hobby[i]+" ";
+		}
+		
+	%>
+	
+	<jsp:useBean id="mbean" class="model.MemberBean">
+		<jsp:setProperty name="mbean" property="*"/>
+	</jsp:useBean>
+	
+	<%
+	
+		mbean.setHobby(textHobby);
+		
+		//데이터 베이스클래스 객체 생성
+		MemberDAO mdao = new MemberDAO()''
+		
+		
+	%>
+	
+	
+	<h1>오라클접속완료</h1>
+</body>
+</html>
